@@ -55,5 +55,9 @@ header {
 }
 
 body {
-  background: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%);
+  background: linear-gradient(120deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%) no-repeat;
+}
+
+html {
+  height: 100%;
 }
