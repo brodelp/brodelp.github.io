@@ -1,5 +1,6 @@
 main {
   display: flex;
+  flex: 1;
   border: 1px solid black;
   padding: 1rem;
   margin-top: 1rem;
@@ -8,8 +9,8 @@ main {
 }
 
 article {
-  text-align: center;
   flex: 2;
+  text-align: center;
   border: 1px solid black;
   box-shadow: .25rem .25rem black;
   margin: 1rem;
