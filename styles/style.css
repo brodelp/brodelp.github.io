@@ -1,18 +1,26 @@
 main {
   display: flex;
   flex: 1;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(243, 147, 22, 0.1) 50%);
+  box-shadow: 0 0 1rem .25rem rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
 }
 
 article {
-  flex-grow: 1;
+  background: inherit;
+  flex-grow: 2;
   text-align: center;
   border: 1px solid black;
-  box-shadow: .25rem .25rem black;
   margin: 1rem;
+  box-shadow: 1rem 1rem 1rem .5rem rgba(21, 108, 126, 0.1);
+}
+
+main div {
+  flex-basis: 4rem;
 }
 
 .japanese {
