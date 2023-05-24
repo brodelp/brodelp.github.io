@@ -11,7 +11,7 @@ main {
 }
 
 article {
-  background: inherit;
+  background: linear-gradient(0deg, rgba(248, 123, 146, 0.2), rgba(253, 211, 42, 0.15) 75%);
   flex-grow: 2;
   text-align: center;
   border: 1px solid black;
