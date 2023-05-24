@@ -5,16 +5,14 @@ main {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
 }
 
 article {
-  flex: 2;
+  flex-grow: 1;
   text-align: center;
   border: 1px solid black;
   box-shadow: .25rem .25rem black;
   margin: 1rem;
-
 }
 
 .japanese {
