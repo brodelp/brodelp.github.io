@@ -1,3 +1,5 @@
+/* || GENERAL STYLE */
+
 h1, 
 h2 {
     text-align: center;
@@ -6,9 +8,11 @@ h2 {
     padding-bottom: 1rem;
 }
 
-header > nav > ul {
+ul {
     list-style: none;
 }
+
+/* || RESUME STYLE */
 
 .name {
     border-bottom: 1px solid black;
@@ -19,23 +23,19 @@ header > nav > ul {
     justify-content: space-around;
 }
 
-.res-header {
+.res {
+    flex-grow: 1;
+}
+
+.res > * {
     text-align: center;
 }
 
-footer {
-    border-top: 1px solid black;
-    text-align: right;
-    margin: 1rem;
+.contact ul{
+    text-align: initial;
 }
 
-body {
-    height: auto;
-    width: auto;
-    background: linear-gradient(130deg, rgba(243, 147, 22, 0.1), rgba(38, 195, 227, 0.1) 70%) no-repeat;
-    background-size: cover;
-}
 
-html {
-    height: 100%;
+.res-header {
+    text-align: center;
 }

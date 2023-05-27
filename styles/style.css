@@ -1,4 +1,70 @@
-main {
+/* || VARIABLES */
+:root {
+  --main-bg-color: linear-gradient(120deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%) no-repeat;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+
+/* || UTILITIES */
+
+a { 
+  color: black;
+  text-decoration: none;
+}
+
+
+/* || SITEWIDE */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content:flex-end;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: unset;
+}
+
+.nav-list > * {
+  font-family: fantasy;
+  text-align: center;
+  border-width: .25rem;
+  border-style: ridge;
+  border-color: black;
+  padding: .25rem;
+  flex-basis: 5rem;
+  border-radius: .25rem;
+  box-shadow: 0rem 0rem 1rem .2rem rgba(211, 106, 125, 0.3) inset;
+}
+
+.nav-list > *:hover {
+  box-shadow: .25rem .25rem black;
+  border-top-left-radius: 1rem;
+}
+
+header {
+  border: 3px solid black;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+}
+
+footer {
+  padding: 1rem;
+  text-align: right;
+}
+
+/* || WELCOME BANNER */
+
+.welcome-banner {
   display: flex;
   flex: 1;
   padding: 1rem;
@@ -9,11 +75,11 @@ main {
   border-radius: 1rem;
 }
 
-article {
+.welcome-banner > article {
   background: linear-gradient(0deg, rgba(248, 123, 146, 0.2), rgba(253, 211, 42, 0.15) 75%);
   flex-grow: 2;
   text-align: center;
-  border: 1px solid black;
+  border: .2rem double white;
   margin: 1rem;
   box-shadow: 1rem 1rem 1rem .5rem rgba(21, 108, 126, 0.1);
 }
@@ -26,49 +92,4 @@ main div {
   writing-mode: vertical-rl;
 }
 
-footer {
-  padding: 1rem;
-  text-align: right;
-}
-
-.nav_list {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nav_list > * {
-  border: 2px solid black;
-  padding: .5rem;
-  border-radius: .25rem;
-  box-shadow: 0rem 0rem .5rem 0rem rgba(170, 86, 101, 0.6) inset;
-}
-
-a { 
-  color: black;
-  text-decoration: none;
-}
-
-.nav_list > *:hover {
-  box-shadow: .25rem .25rem black;
-  border-top-left-radius: 1rem;
-}
-
-
-
-header {
-  border: 3px solid black;
-  border-left: 5rem solid transparent;
-  border-right: 5rem solid transparent;
-}
-
-body {
-  background: linear-gradient(120deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%) no-repeat;
-}
-
-html {
-  height: 100%;
-}
+/* || */
