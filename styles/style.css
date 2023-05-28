@@ -1,6 +1,7 @@
 /* || VARIABLES */
 :root {
   --main-bg-color: linear-gradient(120deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%) no-repeat;
+  --banner-bg-color: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(243, 147, 22, 0.1) 50%);
 }
 
 /* || GENERAL STYLES */
@@ -22,6 +23,12 @@ a {
 
 
 /* || SITEWIDE */
+
+header {
+  border: 3px solid black;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+}
 
 .nav-list {
   display: flex;
@@ -51,31 +58,24 @@ a {
   border-top-left-radius: 1rem;
 }
 
-header {
-  border: 3px solid black;
-  border-left: 5rem solid transparent;
-  border-right: 5rem solid transparent;
+main {
+  margin: auto;
+  width: 60%;
 }
 
-footer {
-  padding: 1rem;
-  text-align: right;
-}
 
-/* || WELCOME BANNER */
-
-.welcome-banner {
+.banner {
   display: flex;
   flex: 1;
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(243, 147, 22, 0.1) 50%);
+  background: --banner-bg-color;
   box-shadow: 0 0 1rem .25rem rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
 }
 
-.welcome-banner > article {
+.banner section {
   background: linear-gradient(0deg, rgba(248, 123, 146, 0.2), rgba(253, 211, 42, 0.15) 75%);
   flex-grow: 2;
   text-align: center;
@@ -83,6 +83,13 @@ footer {
   margin: 1rem;
   box-shadow: 1rem 1rem 1rem .5rem rgba(21, 108, 126, 0.1);
 }
+
+footer {
+  padding: 1rem;
+  text-align: right;
+}
+
+/* || WELCOME */
 
 main div {
   flex-basis: 4rem;

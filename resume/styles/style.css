@@ -3,38 +3,33 @@
 h1, 
 h2 {
     text-align: center;
-    border-top: 1px solid black;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 /* || RESUME STYLE */
 
 .name {
-    border-bottom: 1px solid black;
+    font-size: xx-large;
+    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: .5rem double black;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
 }
 
 .resume {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-.res {
-    flex-grow: 1;
-}
-
-.res > * {
-    text-align: center;
-}
-
-.contact ul{
-    text-align: initial;
-}
-
 
 .res-header {
     text-align: center;
