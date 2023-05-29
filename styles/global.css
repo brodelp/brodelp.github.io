@@ -22,14 +22,14 @@ header {
 }
   
 .nav-list > * {
+    max-width: 100%;
     flex-shrink: 1;
-    font-family: fantasy;
     text-align: center;
     border-width: .25rem;
     border-style: ridge;
     border-color: black;
     padding: .25rem;
-    flex-basis: 5rem;
+    flex-basis: 10rem;
     border-radius: .25rem;
     box-shadow: 0rem 0rem 1rem .2rem rgba(211, 106, 125, 0.3) inset;
 }
@@ -51,6 +51,7 @@ footer {
 
 html {
     height: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
   
 main {
