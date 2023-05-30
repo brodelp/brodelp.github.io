@@ -1,7 +1,9 @@
 /* || VARIABLES */
 :root {
-    --main-bg-color: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(38, 195, 227, 0.2) 70%);
-    --banner-bg-color: linear-gradient(90deg, rgba(243, 147, 22, 0.2), rgba(243, 147, 22, 0.1) 50%);
+    --main-bg-color: linear-gradient(90deg, hsl(35,100%, 90%), hsl(210, 100%, 90%));
+    --banner-bg-color: linear-gradient(90deg, hsl(35, 100%, 85%), hsl(210, 100%, 85%));
+    --card-bg-color: linear-gradient(0deg,  hsl(350, 100%, 90%), hsl(55, 100%, 90%));
+    --nav-bg-color: radial-gradient(hsl(55, 100%, 95%), hsl(350, 100%, 95%));
 }
 
 /* || NAV */
@@ -30,7 +32,7 @@ header {
     border-color: black;
     padding: .25rem;
     border-radius: .25rem;
-    background: radial-gradient(rgba(253, 211, 42, 0.3), rgba(248, 123, 146, 0.2));
+    background: var(--nav-bg-color)
 }
   
 .nav-list > *:hover {
@@ -70,13 +72,13 @@ body {
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    background: --banner-bg-color;
+    background: var(--banner-bg-color);
     box-shadow: 0 0 1rem .25rem rgba(0, 0, 0, 0.6);
     border-radius: 1rem;
 }
   
 .banner section {
-    background: linear-gradient(0deg, rgba(248, 123, 146, 0.2), rgba(253, 211, 42, 0.15) 75%);
+    background: var(--card-bg-color);
     flex-grow: 2;
     text-align: center;
     border: .2rem double white;
