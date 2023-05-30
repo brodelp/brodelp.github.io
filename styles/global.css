@@ -20,22 +20,28 @@ header {
     justify-content:flex-end;
     flex-direction: row;
     gap: 1rem;
-    padding: unset;
+    padding: 1rem;
+    margin: 0;
+    list-style-type: none;
 }
   
 .nav-list > * {
     max-width: 100%;
     flex-shrink: 1;
     text-align: center;
+}
+
+.nav-list a {
+    display: block;
+    padding: .25rem;
     border-width: .25rem;
     border-style: ridge;
     border-color: black;
-    padding: .25rem;
     border-radius: .25rem;
     background: var(--nav-bg-color)
 }
   
-.nav-list > *:hover {
+.nav-list a:hover {
     box-shadow: .25rem .25rem black;
     border-top-left-radius: 1rem;
 }
