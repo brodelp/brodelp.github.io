@@ -9,11 +9,14 @@
 /* || NAV */
 
 header {
+    background: var(--main-bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     margin-top: 1rem;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
     box-shadow: -2rem 0 transparent, 2rem 0 transparent, 0 -1.25rem 1rem -1.1rem black,  0 1.25rem 1rem -1.1rem black;
 }
   
@@ -70,6 +73,7 @@ main {
   }
 
 body {
+    margin-top: 8rem;
     background: var(--main-bg-color);
 }
 
