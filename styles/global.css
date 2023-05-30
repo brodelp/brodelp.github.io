@@ -29,9 +29,8 @@ header {
     border-style: ridge;
     border-color: black;
     padding: .25rem;
-    flex-basis: 10rem;
     border-radius: .25rem;
-    box-shadow: 0rem 0rem 1rem .2rem rgba(211, 106, 125, 0.3) inset;
+    background: radial-gradient(rgba(253, 211, 42, 0.3), rgba(248, 123, 146, 0.2));
 }
   
 .nav-list > *:hover {
