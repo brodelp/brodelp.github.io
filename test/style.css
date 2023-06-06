@@ -83,8 +83,7 @@ header {
     border-bottom-style: solid;
     border-top-style: solid;
     position: relative;
-    /* height: 20%; */
-    transition-duration: 500ms;
+    transition-duration: 250ms;
     transition-timing-function: linear;
 }
 
@@ -196,7 +195,7 @@ nav {
     border-color: transparent;
     color: unset;
     font-size: 0;
-    transition-duration: 400ms;
+    transition-duration: 800ms;
     transition-timing-function: ease-in-out;
     white-space: nowrap;
     text-shadow: .05rem .05rem var(--clr-primary);
@@ -210,6 +209,9 @@ nav {
 .nav-text {
     display: inline;
     font-size: 2rem;
+
+    transition-duration: 500ms;
+    transition-timing-function: linear; 
 }
 
 .nav-link:hover .nav-text {
