@@ -6,6 +6,7 @@
   
 :root {
     --font-size: 16px;
+    --width-sidebar: 15%;
 
     --clr-main: hsl(0, 0%, 5%);
     --clr-alt: hsl(0, 0%, 95%);
@@ -47,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-    margin-left: 20vw;
+    margin-left: var(--width-sidebar);
     padding: 1rem;
 }
 
@@ -56,7 +57,7 @@ main {
     top: 0;
     left: 0;
     height: 100%;
-    width: 20vw;
+    width: var(--width-sidebar);
     margin: 0;
     border-right: .2rem ridge var(--clr-secondary);
     background: linear-gradient(360deg, var(--clr-secondary), var(--clr-primary));
@@ -70,7 +71,7 @@ main {
 header {
     overflow: hidden;
     border-color: transparent;
-    height: 20%;
+    height: 8rem;
 }
 
 .header-contents {
@@ -105,6 +106,7 @@ header {
     padding-bottom: 1rem;
     padding-top: 1rem;
     box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .header-name::after,
@@ -143,7 +145,6 @@ header {
 .name-long {
     display: inline-block;
     opacity: 0;
-    overflow: hidden;
     margin-left: -.25em;
     overflow: visible;
     font-size: 1.25rem;
@@ -237,7 +238,7 @@ nav {
 }
 
 .sidebar:hover {
-    width: 35%;
+    width: calc((var(--width-sidebar)*1.5));
 }
 
 .nav-link:hover .nav-text-long {
