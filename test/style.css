@@ -11,16 +11,20 @@
     --clr-main: hsl(0, 0%, 5%);
     --clr-alt: hsl(0, 0%, 95%);
     --clr-primary: hsl(0, 0%, 90%);
-    --clr-secondary: hsl(0, 0%, 40%);
-    --clr-accent: hsl(0, 100%, 40%);
+    /* --clr-secondary: hsl(0, 0%, 40%); */
+    --clr-secondary: hsl(0, 50%, 60%);
+    --clr-accent: hsl(0, 70%, 40%);
+    --clr-trim: hsl(0, 0%, 40%);
 }
 
 .darkmode {
     --clr-main: hsl(0, 0%, 95%);
     --clr-alt: hsl(0, 0%, 5%);
     --clr-primary: hsl(0, 0%, 25%);
-    --clr-secondary: hsl(0, 0%, 10%);
-    --clr-accent: hsl(0, 100%, 30%);
+    /* --clr-secondary: hsl(0, 0%, 10%); */
+    --clr-secondary: hsl(0, 40%, 50%);
+    --clr-accent: hsl(0, 70%, 30%);
+    --clr-trim: hsl(0, 0%, 10%);
 }
 
 html {
@@ -59,8 +63,15 @@ main {
     height: 100%;
     width: var(--width-sidebar);
     margin: 0;
-    border-right: .2rem ridge var(--clr-secondary);
-    background: linear-gradient(360deg, var(--clr-secondary), var(--clr-primary));
+    /* border-right: .2rem ridge var(--clr-secondary); */
+    border-right: .2rem ridge var(--clr-trim);
+    background: linear-gradient(
+        0deg, 
+        /* var(--clr-secondary),  */
+        var(--clr-secondary),
+        20%, 
+        var(--clr-alt));
+    /* background: linear-gradient(.25turn, red, 10%, blue); */
     transition-duration: 400ms;
     transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     display: flex;
@@ -76,15 +87,17 @@ header {
 
 .header-contents {
     overflow: hidden;
-    border-top-color: var(--clr-secondary);
-    border-bottom-color: var(--clr-secondary);
-    border-top-width: .25rem;
+    /* border-top-color: var(--clr-secondary);
+    border-bottom-color: var(--clr-secondary); */
+    border-top-color: var(--clr-trim);
+    border-bottom-color: var(--clr-trim);
+    border-top-width: .25em;
     border-bottom-width: .25rem;
     border-bottom-style: solid;
     border-top-style: solid;
     position: relative;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 }
 
 .header-contents:hover {
@@ -104,7 +117,7 @@ header {
     padding-left: calc(50% - .5rem);
     padding-bottom: 1rem;
     padding-top: 1rem;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     white-space: nowrap;
 }
 
@@ -117,9 +130,11 @@ header {
     background: conic-gradient(
         from var(--gradient-angle),
         var(--clr-main),
+        var(--clr-main),
         var(--clr-accent),
         var(--clr-alt),
         var(--clr-accent),
+        var(--clr-main),
         var(--clr-main)
       );
     border-radius: inherit;
