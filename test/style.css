@@ -94,7 +94,7 @@ header {
     border-top-width: 0.25rem;
     border-bottom-width: 0.25rem;
 
-    border-bottom-style: groove;
+    border-bottom-style: ridge;
     border-top-style: groove;
     transition-duration: 50ms;
     transition-timing-function: linear;
