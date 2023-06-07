@@ -61,7 +61,7 @@ main {
     height: 100%;
     width: var(--width-sidebar);
     margin: 0;
-    border-right: .2rem ridge var(--clr-trim);
+    border-right: .2rem double var(--clr-trim);
     background: linear-gradient(
         0deg, 
         var(--clr-secondary),
@@ -94,8 +94,8 @@ header {
     border-top-width: .25rem;
     border-bottom-width: .25rem;
 
-    border-bottom-style: ridge;
-    border-top-style: ridge;
+    border-bottom-style: double;
+    border-top-style: double;
 
     transition-delay: 100ms;
     transition-duration: 100ms;
@@ -113,9 +113,6 @@ header {
     font-size: 0;
     transition-duration: 500ms;
     transition-timing-function: linear;
-/* 
-    text-shadow: .05rem .05rem var(--clr-alt); */
-    /* text-shadow: .05rem .05rem transparent; */
 
     padding-left: calc(50% - .5rem);
     padding-bottom: 1rem;
@@ -209,8 +206,6 @@ nav {
 
 .nav-link {
     flex-wrap: nowrap;
-    /* padding-left: calc(50% - .75rem); */
-    /* font-size: 1.5rem; */
     padding: inherit;
     text-align: left;
     flex-grow: 1;
@@ -219,7 +214,6 @@ nav {
     border-style: solid;
     border-color: transparent;
     color: unset;
-    /* font-size: 0; */
     font-size: 1.5rem;
     transition-duration: 800ms;
     transition-timing-function: ease-in-out;
