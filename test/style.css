@@ -67,7 +67,7 @@ main {
         var(--clr-secondary),
         20%, 
         var(--clr-alt));
-    transition-duration: 400ms;
+    transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@ header {
 
 .header-name {
     font-size: 0;
-    transition-duration: 500ms;
+    transition-duration: 400ms;
     transition-timing-function: linear;
 
     padding-left: calc(50% - .5rem);
@@ -132,7 +132,7 @@ header {
     animation: rotation 15s linear infinite;
 
     transition-delay: 100ms;
-    transition-duration: 500ms;
+    transition-duration: 400ms;
     transition-timing-function: ease-in-out;
     filter: blur(2rem);
 }
@@ -148,7 +148,7 @@ header {
     font-size: 1.5rem;
     text-shadow: .05rem .05rem var(--clr-alt);
 
-    transition-duration: 600ms;
+    transition-duration: 500ms;
     transition-timing-function: linear;
 }
 
@@ -158,7 +158,7 @@ header {
     margin-left: -.25em;
     overflow: visible;
     font-size: 1.25rem;
-    transition-duration: 800ms;
+    transition-duration: 600ms;
     transition-timing-function: linear;
 }
 
@@ -212,7 +212,7 @@ nav {
     border-color: transparent;
     color: unset;
     font-size: 1.5rem;
-    transition-duration: 800ms;
+    transition-duration: 400ms;
     transition-timing-function: ease-in-out;
     white-space: nowrap;
     text-shadow: .05rem .05rem var(--clr-primary);
@@ -248,7 +248,7 @@ nav {
     opacity: 0;
     overflow: hidden;
 
-    transition-duration: 700ms;
+    transition-duration: 500ms;
     transition-timing-function: linear; 
 }
 
