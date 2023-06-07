@@ -113,8 +113,9 @@ header {
     font-size: 0;
     transition-duration: 500ms;
     transition-timing-function: linear;
-
-    text-shadow: .05rem .05rem var(--clr-alt);
+/* 
+    text-shadow: .05rem .05rem var(--clr-alt); */
+    /* text-shadow: .05rem .05rem transparent; */
 
     padding-left: calc(50% - .5rem);
     padding-bottom: 1rem;
@@ -155,6 +156,10 @@ header {
 .name-short {
     display: inline;
     font-size: 1.5rem;
+    text-shadow: .05rem .05rem var(--clr-alt);
+
+    transition-duration: 600ms;
+    transition-timing-function: linear;
 }
 
 .name-long {
@@ -163,14 +168,16 @@ header {
     margin-left: -.25em;
     overflow: visible;
     font-size: 1.25rem;
-
     transition-duration: 800ms;
     transition-timing-function: linear;
 }
 
+.header-name:hover .name-short{
+    text-shadow: 0.05rem 0.05rem transparent;
+}
+
 .header-name:hover {
     padding-left: calc(20% - .5rem);
-    text-shadow: 0.05rem 0.05rem var(--clr-main);
 }
 
 
