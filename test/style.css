@@ -13,7 +13,7 @@
     --clr-primary: hsl(0, 0%, 90%);
     --clr-secondary: hsl(0, 50%, 60%);
     --clr-accent: hsl(0, 70%, 40%);
-    --clr-trim: hsl(0, 0%, 40%);
+    --clr-trim: hsl(0, 0%, 80%);
 }
 
 .darkmode {
@@ -91,23 +91,15 @@ header {
     border-top-color: var(--clr-trim);
     border-bottom-color: var(--clr-trim);
 
-    border-top-width: .25rem;
-    border-bottom-width: .25rem;
+    border-top-width: 0.25rem;
+    border-bottom-width: 0.25rem;
 
-    border-bottom-style: double;
-    border-top-style: double;
-
-    transition-delay: 100ms;
-    transition-duration: 100ms;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    transition-duration: 50ms;
     transition-timing-function: linear;
 }
 
-.header-contents:hover {
-    border-top-width: .5rem;
-    border-bottom-width: .5rem;
-    border-bottom-style: double;
-    border-top-style: double;
-}
 
 .header-name {
     font-size: 0;
@@ -147,6 +139,7 @@ header {
 
 .header-name:hover::after {
     filter: blur(0.2rem);
+    inset: .25rem 0rem .25rem 0rem;
 }
 
 
