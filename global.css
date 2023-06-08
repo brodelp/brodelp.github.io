@@ -7,6 +7,7 @@
 :root {
     --font-size: 16px;
     --width-sidebar: 5%;
+    --speed-sidebar: 400ms;
 
     --clr-main: hsl(0, 0%, 5%);
     --clr-alt: hsl(0, 0%, 95%);
@@ -67,8 +68,9 @@ main {
         var(--clr-secondary),
         20%, 
         var(--clr-alt));
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition-duration: var(--speed-sidebar);
+    transition-timing-function: linear;
+    transition-property: width;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,8 +98,6 @@ header {
 
     border-bottom-style: ridge;
     border-top-style: groove;
-    transition-duration: 50ms;
-    transition-timing-function: linear;
 }
 
 
@@ -190,13 +190,6 @@ nav {
     margin: 0;
 }
 
-/* .nav-item {
-    padding: 0;
-    margin: 0;
-    flex-grow: 1;
-    display: flex;
-} */
-
 .nav-link {
     flex-grow: 1;
     display: flex;
@@ -212,10 +205,13 @@ nav {
     border-color: transparent;
     color: unset;
     font-size: 1.5rem;
-    transition-duration: 400ms;
-    transition-timing-function: ease-in-out;
     white-space: nowrap;
     text-shadow: .05rem .05rem var(--clr-primary);
+
+    transition-duration: calc(.5 * var(--speed-sidebar));
+    transition-timing-function: linear; 
+    transition-property: background-color;
+
 }
 
 .nav-link:hover {
@@ -224,7 +220,8 @@ nav {
 
 .nav-text {
     padding-left: calc(50% - .5em);
-    transition-duration: 500ms;
+    transition-delay: calc(0.1 * var(--speed-sidebar));
+    transition-duration: calc(1.5 * var(--speed-sidebar));
     transition-timing-function: linear; 
 }
 
@@ -237,8 +234,8 @@ nav {
 .nav-icon {
     width: 1em;
     height: 1em;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
+    /* transition-duration: 200ms;
+    transition-timing-function: linear; */
     fill: var(--clr-main);
     top: .125em;
     position: relative;
@@ -248,7 +245,7 @@ nav {
     opacity: 0;
     overflow: hidden;
 
-    transition-duration: 500ms;
+    transition-duration: calc(1.25 * var(--speed-sidebar));
     transition-timing-function: linear; 
 }
 
@@ -289,3 +286,4 @@ nav {
     margin-bottom: 1rem;
     fill: var(--clr-main);
 }
+
