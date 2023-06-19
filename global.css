@@ -287,3 +287,14 @@ nav {
     fill: var(--clr-main);
 }
 
+.main-content > * {
+    display: none;
+}
+
+.home-content {
+    display: block;
+}
+
+.resume-content {
+    display: block;
+}
