@@ -111,25 +111,38 @@ function App() {
   function handleShowContent(c: string) {
     setShowContent(c);
   }
-
+  
   function handleSetTheme() {
-    setTheme(theme === 'light' ? 'dark' : 'light')
+    let newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
 
     let html = document.querySelector('html');
-    if (theme =="dark") {
+    if (newTheme == "dark") {
       html?.setAttribute("data-theme", "dark");
     } else {
       html?.setAttribute("data-theme", "light")
     }
   }
 
+
+
+  useEffect(() => {
+    let html = document.querySelector('html');
+    if (theme == "dark") {
+      html?.setAttribute("data-theme", "dark");
+    } else {
+      html?.setAttribute("data-theme", "light")
+    }
+  }, [])
+
   useEffect(() => {
     localStorage.setItem('theme', theme);
   }, [theme])
 
+
   let currentContent;
 
- switch(content) {
+  switch(content) {
     case 'home':
       currentContent = <Home />
       break;
@@ -138,7 +151,7 @@ function App() {
       break;
     default:
       currentContent = <Home />
- }
+  }
 
 
   return (
